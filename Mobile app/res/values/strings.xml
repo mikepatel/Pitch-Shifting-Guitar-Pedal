@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Stompbox</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="libraryTop">App Library</string>
+    <string name="libraryBottom">[Pedal] Library</string>
+    <string name="connections">Connections</string>
+    <string name="share">Share</string>
+    <string name="trash">Trash</string>
+    <string name="advancedSettings">Advanced Settings</string>
+    <string name="secondsRemain">Seconds remaining: 00:0</string>
+    <string name="record">Record</string>
+    <string name="home">Home</string>
+</resources>

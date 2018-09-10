@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.stompbox.project6.stompbox.MainActivity">
+
+
+    <!--App Bar toolbar Layout -->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?actionBarSize">
+
+        <fragment
+            android:id="@+id/fragment"
+            android:name="com.stompbox.project6.stompbox.HomeScreenFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/content_main" />
+
+    </FrameLayout>
+
+        <!--Include content_main which itself includes a default fragment-->
+
+
+
+
+
+
+
+
+
+<!--    <include
+        layout="@layout/content_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>-->
+
+    <!--Floating Action Button - Send - Layout-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_marginBottom"
+        android:src="@drawable/ic_menu_send"
+        />
+
+    <!--Floating Action Button - Record - Layout-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_menu_slideshow"
+        />
+
+</android.support.design.widget.CoordinatorLayout>
